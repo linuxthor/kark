@@ -12,11 +12,11 @@ KARL is a feature that relinks the OpenBSD Kernel each time the system is restar
 
 ## How does it work? Really..      
 
-You can think of KARL as simply a load of .o files in a directory somewhere on disk that are relinked by a makefile each time.    
+You can think of KARL as simply a load of .o files in a directory somewhere on disk that are relinked by a script calling a makefile each time.    
 
 ## What is KARK?    
 
-KARK is a tool that attempts to patch sys_seteuid code in the kern_prot.o file to remove safety checks and relinks the kernel so that when the system is restarted a call like seteuid(0) from any unprivileged user will succeed. KARK is a minimal example of a rootkit-like program provided as a **proof of concept** for security research it does not attempt to hide or obscure it's actions in any way.        
+KARK is a tool that attempts to patch sys_seteuid code in the kern_prot.o file to remove safety checks and relinks the kernel so that when the system is restarted any call like seteuid(0) from an unprivileged user will succeed. KARK is a minimal example of an **experimental** rootkit-like program provided as a **proof of concept** for security research and demonstration.     
 
 ```    
 $ ssh james@192.168.0.90
