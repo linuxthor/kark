@@ -8,7 +8,7 @@ An experimental **proof of concept** rootkit for OpenBSD 6.7.
 
 ## What is KARL?    
 
-KARL is a feature that relinks the OpenBSD Kernel each time the system is restarted with the aim of giving a different layout each time which complicates some forms of exploitation.          
+KARL (https://marc.info/?l=openbsd-tech&m=149732026405941) is a feature that relinks the OpenBSD Kernel each time the system is restarted with the aim of giving a different layout each time which complicates some forms of exploitation.          
 
 ## How does it work? Really..      
 
@@ -33,9 +33,8 @@ enough information to reproduce the problem is enclosed, and if a
 known fix for it exists, include that as well.
 
 obsdtst$ cd /tmp/
-obsdtst$ gcc -Wall -o test test.c                                                                                                                                                                                 
-obsdtst$ ./test                                                                                                                                                                                                   
- --> 0
+obsdtst$ gcc -Wall -o test test.c                                                                                                                                 
+obsdtst$ ./test                                                                                                                                                    --> 0
 obsdtst# id
 uid=1000(james) euid=0(root) gid=1000(james) groups=1000(james), 0(wheel)
 obsdtst# whoami
