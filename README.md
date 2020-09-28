@@ -16,7 +16,7 @@ You can think of KARL as simply a load of .o files in a directory somewhere on d
 
 ## What is KARK?    
 
-KARK is a tool that attempts to patch sys_seteuid code in the kern_prot.o file to remove safety checks and relinks the kernel so that when the system is restarted any call like seteuid(0) from an unprivileged user will succeed. KARK is a minimal example of an **experimental** rootkit-like program provided as a **proof of concept** for security research and demonstration.     
+KARK is a tool that when **run as root** attempts to patch sys_seteuid code in the kern_prot.o file to remove safety checks and relinks the kernel so that when the system is restarted any call like seteuid(0) from an unprivileged user will succeed. KARK is a minimal example of an **experimental** rootkit-like program provided as a **proof of concept** for security research and demonstration.     
 
 ```    
 $ ssh james@192.168.0.90
