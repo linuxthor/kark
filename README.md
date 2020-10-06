@@ -2,7 +2,7 @@
 
 The __"..KARL Aware Rootkit.."__ for OpenBSD 6.7    
 
-![](kark-logo.png)    
+![](kark-banner.png)    
 
 An experimental **proof of concept** rootkit for OpenBSD 6.7. leveraging the 'KARL' system    
 
