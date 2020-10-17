@@ -1,10 +1,10 @@
 # K.A.R.K
 
-The __"..KARL Aware Rootkit.."__ for OpenBSD 6.7    
+The __"..KARL Aware Rootkit.."__ for OpenBSD 6.7 (see branch for experimental 6.8)    
 
 ![](kark-banner.png)    
 
-An experimental **proof of concept** rootkit for OpenBSD 6.7. leveraging the 'KARL' system    
+An experimental **proof of concept** rootkit for OpenBSD 6.7. (see branch for 6.8 dev) leveraging the 'KARL' system    
 
 ## What is KARL?    
 
